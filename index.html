@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Danh sách sản phẩm - Bài tập 35</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>Cửa Hàng Công Nghệ</h1>
+      <p>Tìm kiếm nhanh các thiết bị công nghệ chính hãng</p>
+      
+      <div class="search-box">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Nhập tên sản phẩm cần tìm (vd: iPhone, MacBook...)"
+          aria-label="Tìm kiếm sản phẩm"
+          autocomplete="off"
+        />
+        <button id="clearBtn" type="button" title="Xóa tìm kiếm">Xóa</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Thông báo lỗi / không tìm thấy -->
+    <div id="errorMessage" class="error-message hidden" role="alert"></div>
+
+    <!-- Lưới hiển thị sản phẩm -->
+    <section id="productGrid" class="product-grid" aria-live="polite"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
